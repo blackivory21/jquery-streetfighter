@@ -25,14 +25,14 @@ $(document).ready(function() {
 		$('ryu.ready').show();
 	});
 	$('body').keydown(function(event) {
-		if(event.keyCode==57){
+		if(event.keyCode==88){
 			$('.ryu-cool').show();
 			$('.ryu-still').hide();
 			$('.ryu-ready').hide();
 		}
 	});
 	$('body').on('keyup', function(event) {
-		if(event.keyCode==57){
+		if(event.keyCode==88){
 			$('.ryu-still').show();
 			$('.ryu-cool').hide();
 			$('.ryu-ready').hide();
