@@ -23,16 +23,16 @@ $(document).ready(function() {
 	.mouseup(function() {
 		$('.ryu-throwing').hide();
 		$('ryu.ready').show();
-	})
-	$('body').on('keydown', function(e) {
-		if(e.which==88){
+	});
+	$('body').keydown(function(event) {
+		if(event.keyCode==57){
 			$('.ryu-cool').show();
 			$('.ryu-still').hide();
 			$('.ryu-ready').hide();
 		}
-	})
-	$('body').on('keyup', function(e) {
-		if(e.which==88){
+	});
+	$('body').on('keyup', function(event) {
+		if(event.keyCode==57){
 			$('.ryu-still').show();
 			$('.ryu-cool').hide();
 			$('.ryu-ready').hide();
